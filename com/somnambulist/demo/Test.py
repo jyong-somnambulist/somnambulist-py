@@ -1,23 +1,7 @@
-import keyword
+from pyspark.sql import SparkSession
 
-# python 保留字
-print(keyword.kwlist)
-
-# 第一个注释
-print("hello world")  # 第二关键字
-
-if True:
-    print ("True")
-else:
-    print ("False")
-
-total = "aaa" + \
-    "b" + \
-    "c"
-print(total)
-
-
-
-
-
-
+if __name__ == '__main__':
+    dict_a = {'name': 'aa'}
+    dict_a['age'] = 22
+    dict_a['address'] = None
+    print(dict_a)
