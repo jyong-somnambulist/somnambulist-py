@@ -10,7 +10,7 @@ lista = [('zhangsan', 12), ('lisi', 33)]
 rdd = sc.parallelize(lista)
 df1 = session.createDataFrame(rdd, ['name', 'age'])
 df1.show()
-
+print '-'*100
 # map to df
 Person = Row('name', 'age')
 p = rdd.map(lambda r: Person(*r))
