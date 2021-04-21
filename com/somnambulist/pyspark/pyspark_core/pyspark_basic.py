@@ -7,7 +7,7 @@ lista = ['a', 'b', 'c']
 rdd = sc.parallelize(lista)
 # foreach
 print('-------------------------------------foreach1-------------------------------------')
-rdd.foreach(print)
+rdd.foreach()
 print('-------------------------------------foreach2-------------------------------------')
 
 
